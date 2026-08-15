@@ -9,7 +9,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         const hostname = url.hostname;
 
         // ホスト名がブロック対象のサイトに含まれているか確認
-        if (blockedSites.some(site => hostname.includes(site))) {
+        // if (blockedSites.some(site => hostname.includes(site))) {
+        if (blockedSites.some(site => hostname === site || hostname.endsWith("." + site))) {
             // ブロック対象のサイトの場合、block.htmlにリダイレクト
             chrome.tabs.update(tabId, { url: chrome.runtime.getURL("block.html") });
         }
