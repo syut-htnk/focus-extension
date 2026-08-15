@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const blockedSites = ["youtube.com", "twitter.com", "x.com"];
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     // タブが更新された場合のみ実行 
@@ -14,4 +12,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         }
     }
 });
+export {};
 //# sourceMappingURL=background.js.map

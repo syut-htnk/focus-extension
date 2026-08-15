@@ -6,8 +6,8 @@
     // "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
+    "module": "es6",
+    "target": "es6",
     "types": [
       "chrome"
     ],
