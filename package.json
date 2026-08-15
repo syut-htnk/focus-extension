@@ -1,0 +1,25 @@
+{
+  "name": "focus-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syut-htnk/focus-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/syut-htnk/focus-extension/issues"
+  },
+  "homepage": "https://github.com/syut-htnk/focus-extension#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.2.6",
+    "typescript": "^7.0.2"
+  }
+}
